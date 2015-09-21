@@ -67,5 +67,15 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chroma-js": "^1.1.1",
+    "d3": "^3.5.6",
+    "jquery": "^2.1.4",
+    "leaflet-draw": "^0.2.3",
+    "tile-cover": "^3.0.1",
+    "tilebelt": "^1.0.1",
+    "turf-centroid": "^1.1.2",
+    "turf-featurecollection": "^1.0.1",
+    "turf-polygon": "^1.0.3"
+  }
 }

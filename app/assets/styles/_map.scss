@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+#site-canvas {
+  perspective: 1400px;
+}
+
+.map {
+  height: 600px;
+  width: 900px;
+  overflow:visible;
+
+}
+.magic #map * {
+  -webkit-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+}
+
+.magic #map {
+  cursor:col-resize;
+  -webkit-transform-style:preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.map-container {
+  transition: transform 1s;
+  &.magic {
+    transform: rotateX(60deg);
+  }
+}
+
+//
+// .leaflet-marker-icon {
+//   overflow: visible;
+//   border: 1px solid black;
+//   .platform {
+//     height: 40px;
+//     width: 10px;
+//     background: red;
+//     -webkit-transform-origin: 0% 0%;
+//     -webkit-transform: rotateX(90deg);
+//     border: 1px solid blue;
+//     .fill-line {
+//       width: 10px;
+//       height: 40px;
+//       background: #30a07A;
+//     }
+//   }
+//   .interior-div {
+//     width: 100%;
+//     height: 100%;
+//     border: 1px solid blue;
+//     -webkit-transform:translateZ(10px) ;
+//     transform: perspective(1200) translateZ(10px);
+//   }
+// }
+
+.magic-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  padding: 10px;
+  background-color: blue;
+  cursor: pointer;
+  &:hover {
+    color: gray;
+  }
+}

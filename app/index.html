@@ -8,15 +8,17 @@
     <title>Project Starter</title>
 
     <!-- build:css assets/styles/vendor.css -->
+    <link rel="stylesheet" href="../node_modules/leaflet-draw/dist/leaflet.draw.css">
     <!-- endbuild -->
 
     <!-- build:css assets/styles/main.css -->
     <link rel="stylesheet" href="assets/styles/main.css">
     <!-- endbuild -->
     <link rel="author" type="text/plain" href="humans.txt" />
-
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -28,10 +30,10 @@
 
     <div id="site-canvas">
       <!-- Content goes inside #site-canvas -->
-      <div class="header">
-        <p>In the beginning the Universe was created.<p>
-        <p>This has made a lot of people very angry and been widely regarded as a bad move.</p>
+      <div class="map-container">
+        <div id="map" class="map"></div>
       </div>
+      <div class="magic-button">Magic!</div>
       <!-- Content goes inside #site-canvas -->
     </div>
 
